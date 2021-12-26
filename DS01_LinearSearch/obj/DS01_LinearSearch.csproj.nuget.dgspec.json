@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dnedr\\Desktop\\githurb\\Study_Ardent_DataStructure\\DS01_LinearSearch\\DS01_LinearSearch.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dnedr\\Desktop\\githurb\\Study_Ardent_DataStructure\\DS01_LinearSearch\\DS01_LinearSearch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dnedr\\Desktop\\githurb\\Study_Ardent_DataStructure\\DS01_LinearSearch\\DS01_LinearSearch.csproj",
+        "projectName": "DS01_LinearSearch",
+        "projectPath": "C:\\Users\\dnedr\\Desktop\\githurb\\Study_Ardent_DataStructure\\DS01_LinearSearch\\DS01_LinearSearch.csproj",
+        "packagesPath": "C:\\Users\\dnedr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dnedr\\Desktop\\githurb\\Study_Ardent_DataStructure\\DS01_LinearSearch\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dnedr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

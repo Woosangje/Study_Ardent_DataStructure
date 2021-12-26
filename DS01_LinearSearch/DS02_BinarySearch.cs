@@ -1,0 +1,55 @@
+﻿using System;
+using static System.Console;
+namespace DS02_BinarySearch
+{
+    /*
+    class DS01_BinarySearch
+    {
+        static public int BSearch(int[] ar, int len, int target)//순차 탐색 알고리즘 적용된 메소드
+        {
+            int first = 0;
+            int last = len - 1;
+            int mid;
+
+            while(first <= last)
+            {
+                mid = (first + last) / 2;
+
+                if(target == ar[mid]) 
+                {
+                    return mid;
+                }
+                else//타겟이 아니라면 탐색 대상을 반으로 줄인다.
+                {
+                    if (target < ar[mid])
+                        last = mid - 1;
+                    else
+                        first = mid + 1;
+                }
+            }
+            return -1;//찾지 못했을 떄 반환되는 값 -1
+        }
+        static void Main(string[] args)
+        {
+            int[] arr = { 1, 3, 5, 7, 9 };
+            int idx;
+
+            idx = BSearch(arr, arr.Length, 7);
+            if (idx == -1)
+                WriteLine("탐색 실패 \n");
+            else
+                WriteLine("타겟 저장 인덱스: {0} \n", idx);
+
+            idx = BSearch(arr, arr.Length, 4);
+            if (idx == -1)
+                WriteLine("탐색 실패 \n");
+            else
+                WriteLine("타겟 저장 인덱스: {0} \n", idx);
+
+
+
+
+
+        }
+    }*/
+}
