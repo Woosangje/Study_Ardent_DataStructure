@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using static System.Console;
-namespace DS03_BSWorstOpCount
+namespace DS02_01RecursiveFunc
 {
    /*
     class DS01_BinarySearch
@@ -66,6 +66,6 @@ namespace DS03_BSWorstOpCount
 
 
         }
-    }*/
-   
+    }
+   */
 }

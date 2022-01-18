@@ -1,0 +1,13 @@
+추상 자료형 Abstract Data Type
+
+ListMain.cs
+ArrayList list로 선언하고 싶었으나 if문으로 값을 비교하기 어려워서 List list로 선언
+
+문제 03-1 85p
+
+Point.h,c 94p
+typedef 대신 using 사용
+https://www.delftstack.com/ko/howto/csharp/typedef-equivalent-in-csharp/
+https://docs.microsoft.com/ko-kr/dotnet/framework/interop/marshaling-classes-structures-and-unions
+//개인적인 결론 c에서는 구조체 자체만으로는 깊은복사라고 하기어렵다. c#에서는 선언 자체만으로 깊은복사라 
+//햇갈렸음

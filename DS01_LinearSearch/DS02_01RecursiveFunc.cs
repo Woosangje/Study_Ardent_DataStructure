@@ -3,7 +3,7 @@ using System.Linq;
 using static System.Console;
 namespace DS03_BSWorstOpCount
 {
-   
+   /*
     class DS02_04RecursiveFunc
     {
        static void Recursive(int num)
@@ -21,6 +21,6 @@ namespace DS03_BSWorstOpCount
 
 
         }
-    }
+    }*/
    
 }
