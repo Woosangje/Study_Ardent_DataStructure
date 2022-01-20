@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections;
-//using System.Collections.Generic;
+using System.Collections.Generic;
 namespace DS03_01ListQuesion
 {
     struct _Point
     {
+       
         public int xpos;
         public int ypos;
 
@@ -18,7 +19,7 @@ namespace DS03_01ListQuesion
             Console.WriteLine("[{0}, {1}]", this.xpos, this.ypos);
         }
 
-        public int PointComp(_Point pos1, _Point pos2)
+        public int PointComp(_Point pos1, _Point pos2)//21 20
         {
             if (pos1.xpos == pos2.xpos && pos1.ypos == pos2.ypos)
                 return 0;
@@ -41,23 +42,19 @@ namespace DS03_01ListQuesion
 
         static void Main(string[] args)
         {
-            ArrayList list = new ArrayList();
-            _Point compPos = new _Point();
-            _Point ppos = new _Point();
+            List<_Point> list = new List<_Point>();
+            _Point compPos;
+            _Point ppos;
 
             ppos = new _Point();
             ppos.SetPointPos(2, 1);
             list.Add(ppos);
-
-            ppos = new _Point();
             ppos.SetPointPos(2, 2);
             list.Add(ppos);
 
-            ppos = new _Point();
             ppos.SetPointPos(3, 1);
             list.Add(ppos);
 
-            ppos = new _Point();
             ppos.SetPointPos(3, 2);
             list.Add(ppos);
 
@@ -72,16 +69,27 @@ namespace DS03_01ListQuesion
             compPos.xpos = 2;
             compPos.ypos = 0;
 
+         
             for(int i=0; i<list.Count; i++)
             {
-                ppos = list[i] as ppos;
-                if (list[i].PointComp(ppos, compPos) == 1)
+                if (ppos.PointComp(list[i], compPos) == 1)
                 {
-                    //ppos = i.RemoveAt();
+                    //x값이 같을 경우1
+                    list.RemoveAt(i);
+                    i -= 1;
+
                 }
             }
-
+            //삭제 후 남은 데이터 전체 출력///
+            Console.WriteLine("현재 데이터의 수: {0}", list.Count);
+            
+            for(int i=0; i<list.Count; i++)
+            {
+                list[i].ShowPointPos();
+            }
         }
 
     }
+
+
 }
