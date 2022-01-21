@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-namespace DS03_01ListQuesion
+
+namespace DS03_02Question
 {
-    /*
+    
     struct _Point
     {
        
@@ -91,6 +92,6 @@ namespace DS03_01ListQuesion
         }
 
     }
-    */
+    
 
 }
