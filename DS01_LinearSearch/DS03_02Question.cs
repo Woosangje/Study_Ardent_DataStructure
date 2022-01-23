@@ -1,94 +1,32 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using NameCard;
 namespace DS03_02Question
 {
-    
-    struct _Point
-    {
-       
-        public int xpos;
-        public int ypos;
-
-        public void SetPointPos(int xpos, int ypos)
-        {
-            this.xpos = xpos;
-            this.ypos = ypos;
-        }
-        public void ShowPointPos()
-        {
-            Console.WriteLine("[{0}, {1}]", this.xpos, this.ypos);
-        }
-
-        public int PointComp(_Point pos1, _Point pos2)//21 20
-        {
-            if (pos1.xpos == pos2.xpos && pos1.ypos == pos2.ypos)
-                return 0;
-            else if (pos1.xpos == pos2.xpos)
-                return 1;
-            else if (pos1.ypos == pos2.ypos)
-                return 2;
-            else
-                return -1;
-        }
-
-
-    }
-
-
-
 
     class MainApp
     {
 
         static void Main(string[] args)
         {
-            List<_Point> list = new List<_Point>();
-            _Point compPos;
-            _Point ppos;
+            //_NameCard nameCard = new _NameCard();
+            //List<_NameCard> list = new List<_NameCard>();
+            //1.총 3명의 전화번호 정보를, 앞서 우리가 구현한 리스트에 저장한다.
+            string name1 = "김철수";
+            string phone1 = "01011112222";
+            string name2 = "김영희";
+            string phone2 = "01022223333";
+            string name3 = "최배달";
+            string phone3 = "01033334444";
+            char[] a = { '1', '2', '3', '4', '5' };
+            char[] b = { '9', '8', '7', '6', '5','4','3','2','1' };
 
-            ppos = new _Point();
-            ppos.SetPointPos(2, 1);
-            list.Add(ppos);
-            ppos.SetPointPos(2, 2);
-            list.Add(ppos);
+            Console.WriteLine(b);
+            //2.특정 이름을 대상으로 탐색을 진행하여, 그 사람의 정보를 출력한다.
 
-            ppos.SetPointPos(3, 1);
-            list.Add(ppos);
-
-            ppos.SetPointPos(3, 2);
-            list.Add(ppos);
-
-            Console.WriteLine("현재 데이터의 수: {0}", list.Count);
-
-            foreach (_Point i in list)
-            {
-                i.ShowPointPos();
-            }
-
-            //
-            compPos.xpos = 2;
-            compPos.ypos = 0;
-
-         
-            for(int i=list.Count-1; i>=0; i--)//4 
-            {
-                if (ppos.PointComp(list[i], compPos) == 1)
-                {
-                    //x값이 같을 경우1
-                    list.RemoveAt(i);
-                    
-
-                }
-            }
-            //삭제 후 남은 데이터 전체 출력///
-            Console.WriteLine("현재 데이터의 수: {0}", list.Count);
-            
-            for(int i=0; i<list.Count; i++)
-            {
-                list[i].ShowPointPos();
-            }
+            /*  ppos.SetPointPos(2, 1);
+            list.Add(ppos);*/
         }
 
     }
