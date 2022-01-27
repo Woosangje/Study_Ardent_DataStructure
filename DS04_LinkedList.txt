@@ -1,0 +1,8 @@
+
+109p
+1.클래스를 =null;로 초기화해도 얕은복사는 얕은복사이다.
+2.반복문에서 newNode값을 생성자로 초기화해도 이전의 newNode와 얕은복사 되어 있는 head의 값은 변하지 않는다.
+3.head의 값이 바뀌는 이유는 tail과 얕은복사 되어있기 때문이다.
+4.head가 null일때 초기화한 newNode는 반복 생성되는 다른 newNode와 관계가없다.
+newNode를 조건문에서 생성자로초기화해도
+이전 반복문에서 head의 newNode의 값은 head에 남아있다 

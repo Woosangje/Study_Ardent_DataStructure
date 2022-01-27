@@ -1,3 +1,10 @@
 char[] array = new char[100]; // 배열 생성 
 array = Enumerable.Repeat('S', 1000).ToArray(); // 배열의 값을 'S'로 초기화
 //모든배열 한번에 초기화
+
+c#은 c와 달리 int로 bool로 매핑 해주지않는다
+Convert.ToBoolean(0),Convert.ToBoolean(1) 사용할것 
+
+null사용하고 싶다면
+Nullable<Int32> a=null;
+Nullable<Int32> a=100;
