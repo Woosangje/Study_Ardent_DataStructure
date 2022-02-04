@@ -10,7 +10,7 @@ namespace DS03_02Question
     {
         public int data;
 
-        public _node before;
+        public _node prev;
     }
     class MainApp
     {
@@ -33,17 +33,17 @@ namespace DS03_02Question
 
                 //노드의 추가과정
                 newNode = new _node();
-                newNode.data = readData;//1
-                newNode.before = null;
+                newNode.prev.data = readData;//1
+                newNode = null;
 
                 if (tail == null)//1 null  =  tail 1 2 null
                 {
                     tail = newNode;
                 }
                 else
-                    tail.before = newNode;
+                    tail.prev = newNode;
 
-                head = newNode;//1,2 null
+                head = tail.prev;//null, 2,1 
             }
             Write("\n");
 
@@ -55,14 +55,14 @@ namespace DS03_02Question
             }
             else
             {
-                cur = head;
-                WriteLine(cur.data);
-
-                while (cur.next != null)
+                //cur.prev = head;//2 1 
+               // WriteLine(cur.data);
+                /*
+                while (cur != null)
                 {
                     cur = cur.next;
                     WriteLine(cur.data);
-                }
+                }*/
             }
             WriteLine("\n");
             

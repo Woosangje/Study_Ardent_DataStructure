@@ -24,9 +24,9 @@ namespace DS03_02Question
             _node newNode = null;
             int readData;
 
-            while (Convert.ToBoolean(1))
+            while(Convert.ToBoolean(1))
             {
-                Console.Write("자연수 입력 :");
+                Console.Write("자연수 입력:");
                 readData = int.Parse(ReadLine());
                 if (readData < 1)
                     break;
@@ -49,7 +49,7 @@ namespace DS03_02Question
             Write("\n");
 
             WriteLine("입력 받은 데이터의 전체출력!");
-            if(head ==null)
+            if (head == null)
             {
                 WriteLine("저장된 자연수가 존재하지 않습니다.");
             }
@@ -77,7 +77,7 @@ namespace DS03_02Question
 
                 WriteLine("{0}을(를) 삭제합니다.", head.data);
                 delNode = null;
-                while(delNextNode !=null)
+                while(delNextNode != null)
                 {
                     delNode = delNextNode;
                     delNextNode = delNextNode.next;
@@ -86,9 +86,11 @@ namespace DS03_02Question
                     delNode = null;
                 }
             }
-        }
 
-    }
-    */
+        }
+      
+
+    }*/
+    
 
 }
