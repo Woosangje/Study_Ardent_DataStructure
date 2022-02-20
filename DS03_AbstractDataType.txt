@@ -3,23 +3,37 @@
 ListMain.cs
 ArrayList list로 선언하고 싶었으나 if문으로 값을 비교하기 어려워서 List list로 선언
 
+//list메서드 참조 https://docs.microsoft.com/ko-kr/dotnet/api/system.collections.generic.list-1?view=net-6.0
 문제 03-1 85p
+
+//#define 의 전처리기 구문
+//C#에서는 전처리기가 무시될뿐 아니라 에러가 발생한다.
+//c# private Byte START = 0x00;
 
 Point.h,c 94p
 typedef 대신 using 사용
 https://www.delftstack.com/ko/howto/csharp/typedef-equivalent-in-csharp/
 https://docs.microsoft.com/ko-kr/dotnet/framework/interop/marshaling-classes-structures-and-unions
-//c의 예제가 struct로 생성자를 여러개 선언해놓았다 c#에서 생성자를 2번 선언하는데 그냥struct를 사용하기에는 아쉬움이 있지만 
-클래스나 추상클래스로 선언하는 것도 아쉬움이 있다.
-c#에 LFirst가 없어서 정말 좋다~
 
-c#의ArrayList는 List보다 형식변환이 불편하다. 변수면 "as 반환형식" 을 붙여주면 된다는데 예제는 메소드라 골치아프다
+//c#은 가비지컬렉션이 자동으로 메모리관리해주어서 malloc같은 선언이 필요없다. (이론상)
+//c#의ArrayList는 List보다 형식변환이 불편하다. 변수면 "as 반환형식" 을 붙여주면 된다는데 예제는 메소드라 골치아프다
+//c#에서 일반화 키워드로 c언어의 ListInit 대체할수있다. 
+//반대로 c#에서 ArrayList list를 사용하여 자료구조를 구현하는건 골치아프다.
 
-01/20
-Point예제의 LNext는 참이라 c#에서 마냥 for을 사용하기 뒤끝이 좀 있다.
-리스트의RemoveAt을 for과 list[i]을 사용안하고 반복해보자 구조체 리스트를 remove()로 제거하는건 나중에 실험해보자
+
+
+
 //list는 역for문으로 계산하면 +=1;할 필요가 없어진다.
 
-01/26
 예제108p 
 Array.Resize(ref numAry, numAry.Length + 1);
+
+//정의되어있는 자료구조 외에 리스트를 별도로 구현해야하는 이유 
+리스트에 변수외에도 각종 데이터들을 저장되기 때문 
+
+
+문자열비교 메소드
+string.Compare("AA", "aa", false)
+결과 값이 같으면 0 아니면 1
+문자열의 값이 없을때 
+string str = string.Empty

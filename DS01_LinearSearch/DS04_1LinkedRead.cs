@@ -2,95 +2,87 @@
 using static System.Console;
 using System.Collections;
 using System.Collections.Generic;
-namespace DS03_02Question
-{
+namespace DS04_1LinkedRead {
     //열혈106p
     /*
-    public class _node
-    {
+    class Node {
         public int data;
 
-        public _node next;
+        public Node next;
     }
-    class MainApp
-    {
+    class MainApp {
 
-        static void Main(string[] args)
-        {
-            _node head = null;
-            _node tail = null;
-            _node cur = null;
+        static void Main(string[] args) {
+            Node head = null;
+            Node tail = null;
+            Node cur = null;
+          
+            Node newNode=null;
+            int readData = 0;
 
-            _node newNode = null;
-            int readData;
-
-            while(Convert.ToBoolean(1))
-            {
-                Console.Write("자연수 입력:");
+            //데이터를 입력 받는 과정
+            while (true) {
+                WriteLine("자연수 입력: ");
                 readData = int.Parse(ReadLine());
+
                 if (readData < 1)
                     break;
 
                 //노드의 추가과정
-                newNode = new _node();
+                newNode = new Node();
                 newNode.data = readData;
                 newNode.next = null;
 
-                if (head == null)
-                {
+                if (head == null) {
                     head = newNode;
-                    Write("테스트{0}", head.data);
                 }
                 else
                     tail.next = newNode;
 
                 tail = newNode;
             }
-            Write("\n");
+            WriteLine();
 
-            WriteLine("입력 받은 데이터의 전체출력!");
-            if (head == null)
-            {
-                WriteLine("저장된 자연수가 존재하지 않습니다.");
+            //입력 받은 데이터의 출력과정
+            WriteLine("입력 받은 데이터의 전체출력! ");
+            if (head == null) {
+                WriteLine("저장된 자연수가 존재하지 않습니다. ");
             }
-            else
-            {
+            else {
                 cur = head;
-                WriteLine(cur.data);
+                WriteLine("{0} ", cur.data);//첫 번째 데이터 출력
 
-                while(cur.next != null)
-                {
+                while (cur.next != null) {
                     cur = cur.next;
-                    WriteLine(cur.data);
+                    WriteLine("{0} ", cur.data);
                 }
             }
             WriteLine("\n");
 
-            if(head == null)
-            {
+            //메모리의 해제과정
+            if (head == null) {
 
             }
-            else
-            {
-                _node delNode = head;
-                _node delNextNode = head.next;
+            else {
+                Node delNode = head;
+                Node delNextNode = head.next;
 
-                WriteLine("{0}을(를) 삭제합니다.", head.data);
-                delNode = null;
-                while(delNextNode != null)
+                WriteLine("{0}을(를) 삭제합니다. \n", head.data);
+
+                while (delNextNode != null) //두 번째 이후 노드 삭제
                 {
                     delNode = delNextNode;
                     delNextNode = delNextNode.next;
 
-                    WriteLine("{0}을(를) 삭제합니다.", delNode.data);
-                    delNode = null;
+                    WriteLine("{0}을(를) 삭제합니다. ", delNode.data);
+
                 }
             }
 
         }
-      
+
 
     }*/
-    
+
 
 }

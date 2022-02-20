@@ -11,7 +11,7 @@ namespace DS03_01ListQuesion
         {
             List<int> list = new List<int>();
             int total = 0;
-            for (int i = 1; i < 13; i++)
+            for (int i = 1; i <= 9; i++)
             {
                 list.Add(i);
                 //Console.Write(list[i]);
@@ -23,16 +23,13 @@ namespace DS03_01ListQuesion
             }
             Console.WriteLine("총 합"+total);
             
-            for(int i=0; i<list.Count; i++)
+            for(int i= list.Count-1; i>=0; i--)
             {
-
                 if(list[i]%2==0 && list[i]%3==0)
                 {
                     list.RemoveAt(i);
-                    continue;
                 }
               
-                
             }
             //마지막으로 리스트에 저장된 데이터를 순서대로 출력
             foreach (int arr in list)

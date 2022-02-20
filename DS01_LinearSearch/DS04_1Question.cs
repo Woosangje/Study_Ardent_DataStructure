@@ -6,25 +6,25 @@ namespace DS03_02Question
 {
     //열혈106p
     
-    public class _node
+    class Node
     {
         public int data;
 
-        public _node prev;
+        public Node next;
     }
     class MainApp
     {
 
         static void Main(string[] args)
         {
-            _node head = null;
-            _node tail = null;
-            _node cur = null;
+            Node head = null;
+            Node tail = null;
+            Node cur = null;
 
-            _node newNode = null;
+            Node newNode = null;
             int readData;
 
-            while (Convert.ToBoolean(1))
+            while (true)
             {
                 Console.Write("자연수 입력 : ");
                 readData = int.Parse(ReadLine());
@@ -32,18 +32,24 @@ namespace DS03_02Question
                     break;
 
                 //노드의 추가과정
-                newNode = new _node();
-                newNode.prev.data = readData;//1
-                newNode = null;
+                newNode = new Node();
+                newNode.data = readData;//1
+                newNode.next = null;
 
-                if (tail == null)//1 null  =  tail 1 2 null
+                if (head == null)//1 null  =  tail 1 2 null
                 {
+                    head = newNode;
                     tail = newNode;
                 }
-                else
-                    tail.prev = newNode;
-
-                head = tail.prev;//null, 2,1 
+                else//1 1 
+                {
+                    newNode.next = head;
+                    head= newNode;
+                    
+                    
+                    
+                }
+                
             }
             Write("\n");
 
@@ -51,21 +57,22 @@ namespace DS03_02Question
             WriteLine("입력 받은 데이터의 전체출력!");
             if (head == null)
             {
-                WriteLine("저장된 자연수가 존재하지 않습니다. ");
+                WriteLine("저장된 자연수가 존재하지 않습니다.");
             }
             else
             {
-                //cur.prev = head;//2 1 
-               // WriteLine(cur.data);
-                /*
-                while (cur != null)
+                cur = head;
+                WriteLine(cur.data);
+
+                while (cur.next != null)
                 {
                     cur = cur.next;
                     WriteLine(cur.data);
-                }*/
+                }
             }
-            WriteLine("\n");
-            
+           
+          
+
         }
 
     }

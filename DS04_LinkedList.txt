@@ -6,3 +6,5 @@
 4.head가 null일때 초기화한 newNode는 반복 생성되는 다른 newNode와 관계가없다.
 newNode를 조건문에서 생성자로초기화해도
 이전 반복문에서 head의 newNode의 값은 head에 남아있다 
+
+newNode처럼 초기화 하지 않기 때문에 tail과 head는 되도록 서로 참조하는 일은 없어야한다.
