@@ -5,18 +5,15 @@ using System.Collections.Generic;
 namespace DS03_02Question
 {
     //열혈106p
-    
-    class Node
-    {
+    /*
+    class Node {
         public int data;
 
         public Node next;
     }
-    class MainApp
-    {
+    class MainApp {
 
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
             Node head = null;
             Node tail = null;
             Node cur = null;
@@ -24,8 +21,7 @@ namespace DS03_02Question
             Node newNode = null;
             int readData;
 
-            while (true)
-            {
+            while (true) {
                 Console.Write("자연수 입력 : ");
                 readData = int.Parse(ReadLine());
                 if (readData < 1)
@@ -44,38 +40,34 @@ namespace DS03_02Question
                 else//1 1 
                 {
                     newNode.next = head;
-                    head= newNode;
-                    
-                    
-                    
+                    head = newNode;
+
+
+
                 }
-                
+
             }
             Write("\n");
 
             //입력 받은 데이터의 출력과정
             WriteLine("입력 받은 데이터의 전체출력!");
-            if (head == null)
-            {
+            if (head == null) {
                 WriteLine("저장된 자연수가 존재하지 않습니다.");
             }
-            else
-            {
+            else {
                 cur = head;
                 WriteLine(cur.data);
 
-                while (cur.next != null)
-                {
+                while (cur.next != null) {
                     cur = cur.next;
                     WriteLine(cur.data);
                 }
             }
-           
-          
+
+
 
         }
 
-    }
-    
+    }*/
 
 }

@@ -6,93 +6,76 @@ namespace DS03_02Question
 {
     //열혈106p
     /*
-  public class _node
-  {
-      public int data;
+    
+    class Node {
+        public int data;
 
-      public _node next;
-  }
-  class MainApp
-  {
+        public Node next;
+    }
+    class MainApp {
 
-      static void Main(string[] args)
-      {
-          _node head = null;
-          _node tail = null;
-          _node cur = null;
-            _node dummy = null;
-          _node newNode = null;
-          int readData;
+        static void Main(string[] args) {
+            Node head = null;
+            Node tail = null;
+            Node cur = null;
 
-          while(Convert.ToBoolean(1))
-          {
-              Console.Write("자연수 입력:");
-              readData = int.Parse(ReadLine());
-              if (readData < 1)
-                  break;
+            Node newNode = null;
+            int readData;
 
-              //노드의 추가과정
-              newNode = new _node();
-              newNode.data = readData;
-              newNode.next = null;
+            head = new Node();
+            tail = head;
 
-                if (head == null)
-                {
-                    head = newNode;
-                    dummy = newNode;
+            while (true) {
+                Console.Write("자연수 입력 : ");
+                readData = int.Parse(ReadLine());
+                if (readData < 1)
+                    break;
+
+                //노드의 추가과정
+                newNode = new Node();
+                newNode.data = readData;//1
+                newNode.next = null;
+
+                tail.next = newNode;//2 4
+                tail = newNode;//2 2
+
+            }
+            Write("\n");
+
+            //입력 받은 데이터의 출력과정
+            WriteLine("입력 받은 데이터의 전체출력!");
+            if (head == tail) {
+                WriteLine("저장된 자연수가 존재하지 않습니다.");
+            }
+            else {
+                cur = head;
+
+                while (cur.next != null) {
+                    cur = cur.next;
+                    WriteLine(cur.data);
                 }
-                else
-                {
-                    tail.next = newNode;
-                    dummy.next = newNode;
+            }
+            WriteLine();
+
+            if(head == tail) {
+
+            }
+            else {
+                Node delNode = head;
+                Node delNextNode = head.next;
+
+                while(delNextNode != null) {
+                    delNode = delNextNode;
+                    delNextNode = delNextNode.next;
+                    WriteLine("{0}을(를) 삭제합니다. ", delNode.data);
+
                 }
-                tail = newNode;
-          }
-          Write("\n");
-
-          WriteLine("입력 받은 데이터의 전체출력!");
-          if (head == null)
-          {
-              WriteLine("저장된 자연수가 존재하지 않습니다.");
-          }
-          else
-          {
-              cur = head;
-              WriteLine(cur.data);
-
-              while(cur.next != null)
-              {
-                  cur = cur.next;
-                  WriteLine(cur.data);
-              }
-          }
-          WriteLine("\n");
-
-          if(head == null)
-          {
-
-          }
-          else
-          {
-              _node delNode = head;
-              _node delNextNode = head.next;
-
-              WriteLine("{0}을(를) 삭제합니다.", head.data);
-              delNode = null;
-              while(delNextNode != null)
-              {
-                  delNode = delNextNode;
-                  delNextNode = delNextNode.next;
-
-                  WriteLine("{0}을(를) 삭제합니다.", delNode.data);
-                  delNode = null;
-              }
-          }
-
-      }
+            }
 
 
-  }
-    */
+        }
+
+    }*/
+
 
 }
