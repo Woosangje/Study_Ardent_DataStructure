@@ -5,4 +5,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="DS05_LinkedListMain.cs~RF13486fe7.TMP" />
+  </ItemGroup>
+
 </Project>
