@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DS_LinkedList;
 namespace DS05_LinkedList {
-
+    /*
     class MainApp {
 
         static void Main(string[] args) {
@@ -19,7 +19,7 @@ namespace DS05_LinkedList {
             list.InsertFront(1);
 
             //리스트에 저장된 데이터를 연속 3회 출력
-            if (list.First(data)) {
+            if (First()) {
 
                 WriteLine("{0} ", data);
 
@@ -29,5 +29,5 @@ namespace DS05_LinkedList {
             }
             
         }
-    }
+    }*/
 }
