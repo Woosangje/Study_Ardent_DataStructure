@@ -1,7 +1,7 @@
 ﻿using System;
 using static System.Console;
-namespace DS02_BinarySearch
-{
+namespace DS02_BinarySearch {
+
     /*
     class DS01_BinarySearch
     {
