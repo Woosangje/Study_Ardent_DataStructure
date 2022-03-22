@@ -6,4 +6,5 @@
 02/07 림월드하느라 공부안함 림월드 정보 찾다가 xml에 흥미가생김 엑셀보다 처리속도가 빠르다고함
 02/22 <br/>
 02/28 연결리스트의 구현에 필요한 head,cur를 객체화 하고싶은데 골치가 좀아프다<br/>
-03/01 더미 노드(Dummy Node)의 int (*comp)(LData d1, LData d2) c#에서 어떻게 구현해야할까 고민하다 c#컬렉션 다시공부
+03/01 더미 노드(Dummy Node)의 int (comp)(LData d1, LData d2) c#에서 어떻게 구현해야할까 고민하다 c#컬렉션 다시공부<br/>
+03/22 c# LinkeList 사용법 : https://funfunhanblog.tistory.com/198 
